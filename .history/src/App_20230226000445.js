@@ -6,7 +6,7 @@ import './App.css';
 
 class App extends Component { //React.Fragment will work also, removing the App div from rendering
   state = {
-    users: [],
+    user: [],
     loading: false
   }
 
@@ -18,7 +18,7 @@ class App extends Component { //React.Fragment will work also, removing the App 
     {process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=$
     {process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
 
-    this.setState({users: res.data, loading: false});
+    this.setState({user: res.data, loading: false});
 
     // console.log(res.data); <--This goes into state of app data
   }

@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const Navbar = ({icon, title}) => { //Prop Types good for you! Take you prop type medicine
+const Navbar = (props) => { //Prop Types good for you! Take you prop type medicine
 
     return (
       <nav className="navbar bg-primary">
         <h1>
-          <i className={icon} /> {title}
+          <i className={this.props.icon} /> {props.title}
         </h1>
       </nav>
-    );
-};
+    )
+}
 
 Navbar.defaultProps = {
   title: 'Github Finder',

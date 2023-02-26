@@ -6,7 +6,7 @@ import './App.css';
 
 class App extends Component { //React.Fragment will work also, removing the App div from rendering
   state = {
-    users: [],
+    user: [],
     loading: false
   }
 
