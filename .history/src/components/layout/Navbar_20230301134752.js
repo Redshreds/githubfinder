@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'; // Link allows us to change pages without affecting state. "A tags" will clear search field. Links will preserve search results.
+import { Link } from 'react-router-dom';
 
 const Navbar = ({icon, title}) => { //Prop Types good for you! Take you prop type medicine
 
